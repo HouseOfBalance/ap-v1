@@ -1,0 +1,8 @@
+module.exports = function(app) 
+  {
+    app.get("/time", function(a, b) 
+            {
+              b.send(Math.floor(Date.now()/1000).toString())
+              
+            })
+  }
